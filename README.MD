@@ -1,5 +1,5 @@
 ## 🌊 SR-Flood: A Dataset and Benchmark for Road Flood Depth Detection via Autonomous Driving Image Editing
-
+### 📕 [Dataset Link](https://www.kaggle.com/datasets/liangxiaoyupku/su-flood)
 ### 📁 Data Synthesis
 The results of each step can be found in "synthesis/example". In every step, simply adjust the input and output folders to manage what goes in and what comes out. Here’s a detailed breakdown:
 
@@ -34,3 +34,4 @@ python pth_transfer.py --fgd_path ./work_dirs/stage2/latest.pth --output_path ./
 bash tools/dist_test.sh configs/distillers/suflood/neck_RAU_final_stage_1.py ./work_dirs/stage2/student_latest.pth 1
 
 ```
+

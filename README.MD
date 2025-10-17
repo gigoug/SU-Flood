@@ -1,4 +1,4 @@
-## 🌊 SU-FLOOD: A Benchmark for Urban Flood Depth Detection via Autonomous Driving Image Editing
+## 🌊 SR-Flood: A Dataset and Benchmark for Road Flood Depth Detection via Autonomous Driving Image Editing
 
 ### 📁 Data Synthesis
 The results of each step can be found in "synthesis/example". In every step, simply adjust the input and output folders to manage what goes in and what comes out. Here’s a detailed breakdown:
@@ -32,4 +32,5 @@ bash tools/dist_train.sh configs/distillers/suflood/neck_RAU_final_stage_1.py 2 
 ```python
 python pth_transfer.py --fgd_path ./work_dirs/stage2/latest.pth --output_path ./work_dirs/stage2/student_latest.pth
 bash tools/dist_test.sh configs/distillers/suflood/neck_RAU_final_stage_1.py ./work_dirs/stage2/student_latest.pth 1
+
 ```
